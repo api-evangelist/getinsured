@@ -1,8 +1,15 @@
 aid: getinsured
 name: GetInsured
-description: 'GetInsured is a company surfaced as a portfolio company of bessemer-venture-partners and
-  added to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: 'GetInsured (Vimo, Inc.) is a SaaS technology provider for public-sector
+  healthcare that powers state-based health insurance marketplaces (SBMs). Its platform
+  handles eligibility and enrollment, plan shopping and comparison, and consumer-assistance
+  contact-center operations for state ACA exchanges. GetInsured powers ten state marketplaces
+  (including Idaho, Illinois, Minnesota, Nevada, New Jersey, New Mexico, Pennsylvania,
+  Georgia, Virginia, and Oregon, with Oregon launching in 2027) and supported the migration
+  of roughly 4.5 million people off Healthcare.gov. It sells to state governments, insurance
+  carriers, agents/brokers, and enrollment assisters. GetInsured does not publish a public
+  self-serve developer portal or API; integrations are delivered under contract. Backed by
+  Bessemer Venture Partners. This profile was enriched by the API Evangelist pipeline.'
 url: https://raw.githubusercontent.com/api-evangelist/getinsured/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +17,31 @@ x-backed-by:
 - bessemer-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://company.getinsured.com/wp-content/uploads/2021/10/GetInsured-By-Vimo-white.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Healthcare
+- Health Insurance
+- Government
+- Insurance
+- Marketplace
+- ACA
+- SaaS
+- Enrollment
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/getinsured-domain-security.yml
 - type: Website
-  url: https://www.getinsured.com/
+  url: https://company.getinsured.com/
+- type: Blog
+  url: https://company.getinsured.com/blog/
+- type: BlogRSS
+  url: https://company.getinsured.com/feed/
+- type: Support
+  url: https://company.getinsured.com/contact/
+- type: PrivacyPolicy
+  url: https://company.getinsured.com/privacy-policy/
+- type: LLMsTxt
+  url: llms/getinsured-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
